@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Baby!</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- CUSTOMIZE: Change the src to your romantic background music -->
+    <audio id="bgMusic" loop>
+        <!-- Place your music file (e.g., 'can-i-call-you-baby.mp3') inside a music folder or use a direct link -->
+        <source src="music/can-i-call-you-baby.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Music Control -->
+    <button id="musicToggle" class="music-btn">🎵 Play Music</button>
+
+    <!-- Floating Hearts Container -->
+    <div id="hearts-container"></div>
+
+    <!-- 1. Hero Section -->
+    <section id="hero" class="fullscreen text-center">
+        <div class="hero-content">
+            <!-- CUSTOMIZE: Change her name here -->
+            <h1 class="typing-text">My Baby, <span class="highlight">vani</span> ❤️</h1>
+            <p class="subtitle fade-in-up">To the most amazing person in my life.</p>
+            <a href="#story" class="scroll-down">Scroll Down ⬇️</a>
+        </div>
+    </section>
+
+    <!-- 2. Story / Message Section -->
+    <section id="story" class="section glass hidden">
+        <h2>Our Story</h2>
+        <!-- CUSTOMIZE: Add your personal message here -->
+        <p class="romantic-text">
+            Every Times you block me, and again unblock me, I don't know what wrong with you or i am doing anythig wrong with you. If you don't like me or don't want me just tell me once i promice i will never come again, but the main thing is when i get you i forget every girl becoz you make my life like a beautiful garden but sometime you hurt me but no way, i can do anything thig for you. becoz you are best person i ever meat.
+        </p>
+    </section>
+
+    <!-- 3. Photo Gallery Section -->
+    <section id="gallery" class="section hidden">
+        <h2>Some pic you give me</h2>
+        <div class="gallery-grid">
+            <!-- CUSTOMIZE: Place your images named 1.jpeg to 10.jpeg inside the images folder -->
+            <div class="gallery-item"><img src="images/1.jpeg" alt="Memory 1" class="align-top"></div>
+            <div class="gallery-item"><img src="images/2.jpeg" alt="Memory 2"></div>
+            <div class="gallery-item"><img src="images/6.jpeg" alt="Memory 3"></div>
+            <div class="gallery-item"><img src="images/5.jpeg" alt="Memory 5"></div>
+            <div class="gallery-item"><img src="images/3.jpeg" alt="Memory 6"></div>
+            <div class="gallery-item"><img src="images/7.jpeg" alt="Memory 7"></div>
+            <div class="gallery-item"><img src="images/8.jpeg" alt="Memory 8"></div>
+            <div class="gallery-item"><img src="images/9.jpeg" alt="Memory 9"></div>
+            <div class="gallery-item"><img src="images/10.jpeg" alt="Memory 10"></div>
+        </div>
+    </section>
+
+    <!-- 4. Love Timeline Section -->
+    <section id="timeline" class="section hidden">
+        <h2>Our Journey</h2>
+        <div class="timeline-container">
+            <!-- CUSTOMIZE: Change timeline events -->
+            <div class="timeline-item left">
+                <div class="content">
+                    <h3>The First Time We Met</h3>
+                    <p>On whatapp for prank and it's get a attachment</p>
+                </div>
+            </div>
+            <div class="timeline-item right">
+                <div class="content">
+                    <h3>Our First video call</h3>
+                    <p>I couldn't stop looking at you.</p>
+                </div>
+            </div>
+            <div class="timeline-item left">
+                <div class="content">
+                    <h3>When I Said I Love You</h3>
+                    <p>The best decision of my life.</p>
+                </div>
+            </div>
+            <div class="timeline-item right">
+                <div class="content">
+                    <h3>Today</h3>
+                    <p>I feel, you don't like me the way you did before.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Surprise Section -->
+    <section id="surprise" class="section text-center hidden">
+        <h2>A Little Surprise</h2>
+        <!-- CUSTOMIZE: Button text and popup content can be changed below -->
+        <button id="surpriseBtn" class="primary-btn">Click for Surprise 🎁</button>
+    </section>
+
+    <!-- Modal Popup for Surprise -->
+    <div id="surpriseModal" class="modal">
+        <div class="modal-content glass">
+            <span class="close-btn">&times;</span>
+            <h2>I Love You! 💖</h2>
+            <p>You make every single day better just by being in it. Here's to making infinitely more memories together!</p>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <!-- Confetti Library -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
